@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &3144007411831988107
+--- !u!1 &764865066491144293
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,39 +8,38 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 3144007411831988105}
-  - component: {fileID: 3144007411831988104}
-  - component: {fileID: 3144007411831988118}
-  - component: {fileID: 3144007411831988119}
-  - component: {fileID: 5128921755021615860}
+  - component: {fileID: 7296577243981863374}
+  - component: {fileID: 5729726687177757125}
+  - component: {fileID: 8741019387537232540}
+  - component: {fileID: 6898991290126800461}
   m_Layer: 0
-  m_Name: Enemy7
+  m_Name: wash hands
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &3144007411831988105
+--- !u!4 &7296577243981863374
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3144007411831988107}
+  m_GameObject: {fileID: 764865066491144293}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 42.279, y: -5.9992003, z: 0}
-  m_LocalScale: {x: 0.26180053, y: 0.26180053, z: 0.26180053}
+  m_LocalPosition: {x: 42.613, y: -9.5047, z: 0}
+  m_LocalScale: {x: 0.2616977, y: 0.2616977, z: 0.2616977}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &3144007411831988104
+--- !u!212 &5729726687177757125
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3144007411831988107}
+  m_GameObject: {fileID: 764865066491144293}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -71,76 +70,62 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 8008179130817816579, guid: bf50e6706fdf1b54a960d8c6291c665d,
+  m_Sprite: {fileID: 2941633220962584929, guid: 13c34474b987b8d478f8f90eb59f5e74,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 13.812985, y: 3.86}
+  m_Size: {x: 13.812985, y: 3.92}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &3144007411831988118
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3144007411831988107}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4cae4df5f56e3ff42a1c7ee950a13365, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 5
-  textbox: {fileID: 3144007411831988105}
---- !u!50 &3144007411831988119
+--- !u!50 &8741019387537232540
 Rigidbody2D:
   serializedVersion: 4
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3144007411831988107}
+  m_GameObject: {fileID: 764865066491144293}
   m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
   m_LinearDrag: 0
-  m_AngularDrag: 0
+  m_AngularDrag: 0.05
   m_GravityScale: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 8adde8ae900f59d4f8665bac4b0d0914, type: 2}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 0
---- !u!61 &5128921755021615860
+--- !u!61 &6898991290126800461
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3144007411831988107}
+  m_GameObject: {fileID: 764865066491144293}
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 6200000, guid: 8adde8ae900f59d4f8665bac4b0d0914, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.4}
+  m_Offset: {x: 0, y: 0.28906155}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 13.812985, y: 3.86}
-    newSize: {x: 13.812985, y: 3.86}
+    oldSize: {x: 13.812985, y: 3.92}
+    newSize: {x: 13.812985, y: 3.92}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 13.812985, y: 4.62}
+  m_Size: {x: 13.812985, y: 4.498123}
   m_EdgeRadius: 0
