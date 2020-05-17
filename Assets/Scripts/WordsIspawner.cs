@@ -2,19 +2,21 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TextSpawner : MonoBehaviour
+public class WordsIspawner : MonoBehaviour
 {
-    public GameObject[] enemyText;
     int randomEnemy;
-    float randX = 27.8f;
+    public GameObject[] enemyText;
+    float randX;
+    float randY;
     Vector2 whereToSpawn;
     public float spawnRate = 2f;
     float nextSpawn = 0.0f;
+    public GameObject spawner;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        Invoke("StopSpawning", 12);
     }
 
     // Update is called once per frame
@@ -24,11 +26,15 @@ public class TextSpawner : MonoBehaviour
         {
             randomEnemy = Random.Range(0, enemyText.Length);
             nextSpawn = Time.time + spawnRate;
-            whereToSpawn = new Vector2(randX, transform.position.y);
-            Instantiate(enemyText [randomEnemy], whereToSpawn, Quaternion.identity);
+            randX = Random.Range(-1.8f, 7.7f);
+            randY = Random.Range(3.85f, -3.8f);
+            whereToSpawn = new Vector2(randX, randY);
+            Instantiate(enemyText[randomEnemy], whereToSpawn, Quaternion.identity);
         }
     }
 
-    
-
+    public void StopSpawning()
+    {
+        Object.Destroy(spawner);
+    }
 }
