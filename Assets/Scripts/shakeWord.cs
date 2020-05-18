@@ -5,6 +5,7 @@ using UnityEngine;
 public class shakeWord : MonoBehaviour
 {
     public bool shit = false;
+    
 
     [Header("Info")]
     private Vector3 _startPos;
@@ -32,14 +33,15 @@ public class shakeWord : MonoBehaviour
 
     private void Start()
     {
-
+        Invoke("ChangeShit", 15f);
     }
     private void Update()
     {
-        Invoke("ChangeShit", 15f);
+        
         if (shit == true)
         {
             Begin();
+            
         }
 
 
@@ -48,6 +50,7 @@ public class shakeWord : MonoBehaviour
     void ChangeShit()
     {
         shit = true;
+        
     }
 
     public void Begin()

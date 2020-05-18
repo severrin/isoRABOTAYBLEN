@@ -7,12 +7,12 @@ public class RoomScript : MonoBehaviour
     public GameObject room;
 
     bool bigroom = true;
-    float s = -0.0001f;
+    public float s = -0.0001f;
 
     // Start is called before the first frame update
     void Start()
     {
-      
+        Invoke("Smaller", 10f);
     }
 
     // Update is called once per frame
@@ -30,5 +30,16 @@ public class RoomScript : MonoBehaviour
        
             
 
+    }
+
+    void Smaller()
+    {
+        s = -0.0003f;
+        Invoke("Smallest", 5f);
+    }
+
+    void Smallest()
+    {
+        s = -0.0005f;
     }
 }

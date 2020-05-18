@@ -5,6 +5,7 @@ using UnityEngine;
 public class Shaking : MonoBehaviour
 {
     public bool shit = false;
+    
 
     [Header("Info")]
     private Vector3 _startPos;
@@ -32,14 +33,15 @@ public class Shaking : MonoBehaviour
 
     private void Start()
     {
-       
+        Invoke("ChangeShit", 10f);
     }
     private void Update()
     {
-        Invoke("ChangeShit", 10f);
+        
         if (shit == true)
         {
             Begin();
+            
         }
 
 
@@ -48,6 +50,7 @@ public class Shaking : MonoBehaviour
     void ChangeShit()
     {
         shit = true;
+        
     }
 
     public void Begin()
