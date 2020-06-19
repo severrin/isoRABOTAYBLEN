@@ -11,6 +11,8 @@ public class DeleteScript : MonoBehaviour
 
     public AudioSource delete;
 
+    public GameObject cat;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -31,12 +33,21 @@ public class DeleteScript : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        Destroy(other.gameObject);
-        
-        End = End-1;
-        Debug.Log(End);
+        if(other.gameObject == cat)
+        {
+            Destroy(other.gameObject);
+            delete.Play();
+        }
+        else
+        {
+            Destroy(other.gameObject);
 
-        delete.Play(); 
+            End = End - 1;
+            Debug.Log(End);
+
+            delete.Play();
+        }
+        
     }
 
     void Love()

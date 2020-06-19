@@ -4,8 +4,7 @@ using UnityEngine;
 
 public class ShakeOne : MonoBehaviour
 {
-    public bool shit = false;
-    
+    public bool shk = false;
 
     [Header("Info")]
     private Vector3 _startPos;
@@ -20,8 +19,12 @@ public class ShakeOne : MonoBehaviour
     [Range(0f, 0.1f)]
     public float _delayBetweenShakes = 0f;
 
+    private Rigidbody2D rb;
+    private bool isShaking;
+
     private void Awake()
     {
+        rb = GetComponent<Rigidbody2D>();
         _startPos = transform.position;
     }
 
@@ -33,24 +36,22 @@ public class ShakeOne : MonoBehaviour
 
     private void Start()
     {
-        Invoke("ChangeShit", 10f);
+        Invoke("ChangeShake", 10f);
     }
     private void Update()
     {
-        
-        if (shit == true)
+
+        if (shk == true && !isShaking)
         {
             Begin();
-            
+            isShaking = true;
         }
-
 
     }
 
-    void ChangeShit()
+    void ChangeShake()
     {
-        shit = true;
-        
+        shk = true;
     }
 
     public void Begin()
@@ -65,11 +66,12 @@ public class ShakeOne : MonoBehaviour
 
         while (_timer < _time)
         {
-            _timer += Time.deltaTime;
+            _timer += Time.fixedDeltaTime;
 
             _randomPos = _startPos + (Random.insideUnitSphere * _distance);
 
-            transform.position = _randomPos;
+            rb.position = _randomPos;
+            // transform.position = _randomPos;
 
             if (_delayBetweenShakes > 0f)
             {
@@ -81,6 +83,8 @@ public class ShakeOne : MonoBehaviour
             }
         }
 
-        transform.position = _startPos;
+
+        rb.position = _startPos;
+        Begin();
     }
 }

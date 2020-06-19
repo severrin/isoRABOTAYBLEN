@@ -36,7 +36,7 @@ public class ShakeWordSHIT : MonoBehaviour
 
     private void Start()
     {
-        Invoke("ChangeShake", 15f);
+        Invoke("ChangeShake", 20f);
     }
     private void Update()
     {
