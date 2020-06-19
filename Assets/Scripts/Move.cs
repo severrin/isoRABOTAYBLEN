@@ -39,6 +39,7 @@ public class Move : MonoBehaviour
     }
 
     private void OnMouseUp()
+
     {
         isBeingHeld = false;
     }

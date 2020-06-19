@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Shaking : MonoBehaviour
+public class ShakeOne : MonoBehaviour
 {
     public bool shit = false;
     
