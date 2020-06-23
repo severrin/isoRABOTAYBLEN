@@ -6,8 +6,11 @@ public class ClickOn : MonoBehaviour
 {
     public GameObject stopper;
     public GameObject end;
-
     public GameObject uved;
+
+    public GameObject stopper2;
+    public GameObject spawner;
+
 
     // Update is called once per frame
 
@@ -21,11 +24,12 @@ public class ClickOn : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
-           Debug.Log("You Click");
             Destroy(uved);
-        
-           //stopper.GetComponent<EdgeCollider2D>().enabled = false;
-           //StartCoroutine(Waiting());
+
+            stopper2.GetComponent<EdgeCollider2D>().enabled = false;
+            Object.Destroy(spawner);
+
+
         }
     }
 
