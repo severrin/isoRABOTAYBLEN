@@ -23,6 +23,8 @@ public class PauseMenu : MonoBehaviour
                 Pause();
             }
         }
+
+    
     }
 
    public void Resume ()
@@ -48,6 +50,7 @@ public class PauseMenu : MonoBehaviour
 
     public void Reload()
     {
+        Time.timeScale = 1f;
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 

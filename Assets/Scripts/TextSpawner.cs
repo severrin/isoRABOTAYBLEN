@@ -11,11 +11,15 @@ public class TextSpawner : MonoBehaviour
     public float spawnRate = 2f;
     float nextSpawn = 0.0f;
 
+    public AudioSource sms;
+    public GameObject PlaySound;
+
     // Start is called before the first frame update
     void Start()
     {
 
         StartCoroutine(Stage1());
+        
     }
 
     // Update is called once per frame
@@ -29,14 +33,18 @@ public class TextSpawner : MonoBehaviour
                 nextSpawn = Time.time + spawnRate;
                 whereToSpawn = new Vector2(randX, transform.position.y);
                 Instantiate(enemyText[randomEnemy], whereToSpawn, Quaternion.identity);
+
+                PlaySound.GetComponent<SoundManager>().PlaySound();
             }
             
             else
             {
-                randomEnemy = Random.Range(4, 8);
+                randomEnemy = Random.Range(0, 8);
                 nextSpawn = Time.time + spawnRate;
                 whereToSpawn = new Vector2(randX, transform.position.y);
                 Instantiate(enemyText[randomEnemy], whereToSpawn, Quaternion.identity);
+
+                PlaySound.GetComponent<SoundManager>().PlaySound();
             }
         }
     }
