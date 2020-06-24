@@ -1,0 +1,461 @@
+fileFormatVersion: 2
+guid: 3ed635060d5db524fa5ec1e0fd63a259
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3958945569171973920
+    second: Temperature_words_0
+  - first:
+      213: 8515580054832059696
+    second: Temperature_words_1
+  - first:
+      213: -4956714750293414008
+    second: Temperature_words_2
+  - first:
+      213: 2336804895106260180
+    second: Temperature_words_3
+  - first:
+      213: -1751298649245202396
+    second: Temperature_words_4
+  - first:
+      213: -1057088418676949514
+    second: Temperature_words_5
+  - first:
+      213: 7064734680582376370
+    second: Temperature_words_6
+  - first:
+      213: 4227696348860574453
+    second: Temperature_words_7
+  - first:
+      213: -8629190127353090352
+    second: Temperature_words_8
+  - first:
+      213: 3265188965603926028
+    second: Temperature_words_9
+  - first:
+      213: -966338417364365670
+    second: Temperature_words_10
+  - first:
+      213: -6261511873266701667
+    second: Temperature_words_11
+  - first:
+      213: -5601537222712732075
+    second: Temperature_words_12
+  - first:
+      213: -4617194170087453291
+    second: Temperature_words_13
+  - first:
+      213: 328614160597187518
+    second: Temperature_words_14
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Temperature_words_0
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 2972
+        width: 1104
+        height: 395
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0509646b01dfa8e4384a027e6e582be6
+      internalID: 3958945569171973920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Temperature_words_1
+      rect:
+        serializedVersion: 2
+        x: 1221
+        y: 2975
+        width: 1232
+        height: 394
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ee92985cf371234e8959a4fc143e24c
+      internalID: 8515580054832059696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Temperature_words_2
+      rect:
+        serializedVersion: 2
+        x: 2534
+        y: 2977
+        width: 1491
+        height: 395
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4028ed329c0c46943b8bac8c1c9dc9cb
+      internalID: -4956714750293414008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Temperature_words_3
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 2509
+        width: 1202
+        height: 395
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c8ec1cc01be9a24c837682095dcf08a
+      internalID: 2336804895106260180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Temperature_words_4
+      rect:
+        serializedVersion: 2
+        x: 1306
+        y: 2509
+        width: 1343
+        height: 395
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27b0b0120ac6acb4092e3c516448bdc9
+      internalID: -1751298649245202396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Temperature_words_5
+      rect:
+        serializedVersion: 2
+        x: 2712
+        y: 2512
+        width: 1325
+        height: 395
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f237e5de186c024e989485afaea341f
+      internalID: -1057088418676949514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Temperature_words_6
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 2054
+        width: 1383
+        height: 395
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7231a3465232db841bf58281f01da67a
+      internalID: 7064734680582376370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Temperature_words_7
+      rect:
+        serializedVersion: 2
+        x: 1573
+        y: 2069
+        width: 1730
+        height: 397
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7281f62c8044c14d8ab9c6d08d6d745
+      internalID: 4227696348860574453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Temperature_words_8
+      rect:
+        serializedVersion: 2
+        x: 3351
+        y: 2084
+        width: 1217
+        height: 395
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b905144eab7751b4d8d785b3913910e6
+      internalID: -8629190127353090352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Temperature_words_9
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 1591
+        width: 681
+        height: 397
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1cf2cbcd752d484fa16b6732c456119
+      internalID: 3265188965603926028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Temperature_words_10
+      rect:
+        serializedVersion: 2
+        x: 819
+        y: 1591
+        width: 1435
+        height: 397
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34af57ba61e3e9d4bb20f06fccef1583
+      internalID: -966338417364365670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Temperature_words_11
+      rect:
+        serializedVersion: 2
+        x: 2340
+        y: 1599
+        width: 930
+        height: 394
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42e026365fcefb14a9699ef1502e4aa6
+      internalID: -6261511873266701667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Temperature_words_12
+      rect:
+        serializedVersion: 2
+        x: 3341
+        y: 1609
+        width: 1255
+        height: 395
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a557dff24a48b141b2df6f36b0ab9ef
+      internalID: -5601537222712732075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Temperature_words_13
+      rect:
+        serializedVersion: 2
+        x: 1749
+        y: 67
+        width: 817
+        height: 1464
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c011724d164c9243baf709a0697dd30
+      internalID: -4617194170087453291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Temperature_words_14
+      rect:
+        serializedVersion: 2
+        x: 2699
+        y: 839
+        width: 893
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2888fdec5300c2248b18b19d0ea16d18
+      internalID: 328614160597187518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 8e511552c0100b14a89f2ea7cb60b661
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
