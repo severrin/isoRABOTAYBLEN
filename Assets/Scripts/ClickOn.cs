@@ -11,8 +11,16 @@ public class ClickOn : MonoBehaviour
     public GameObject stopper2;
     public GameObject spawner;
 
+    public GameObject black;
+    public GameObject other;
+
+    public AudioSource offPhone;
 
     // Update is called once per frame
+    private void Start()
+    {
+        Invoke("tryOther", 15f);
+    }
 
     void OnTriggerEnter2D(Collider2D other)
     {
@@ -24,11 +32,15 @@ public class ClickOn : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
+            
             Destroy(uved);
 
             stopper2.GetComponent<EdgeCollider2D>().enabled = false;
             Object.Destroy(spawner);
 
+            black.GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, 1f);
+
+            //offPhone.Play();
 
         }
     }
@@ -46,5 +58,9 @@ public class ClickOn : MonoBehaviour
         
     }
 
+    void tryOther()
+    {
+        other.GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, 1f);
+    }
     
 }
