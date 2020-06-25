@@ -9,8 +9,16 @@ public class aController : MonoBehaviour
     public float speed = 2f;
     public Animator animator;
 
+    bool isMoving = false;
 
-   // float horizontalMove = 0f;
+    Rigidbody2D rb;
+
+    private void Start()
+    {
+        //GetComponent<AudioSource>().Pause();
+        rb = GetComponent<Rigidbody2D>();
+    }
+    // float horizontalMove = 0f;
 
     // Update is called once per frame
     void Update()
@@ -23,5 +31,28 @@ public class aController : MonoBehaviour
         animator.SetFloat("Speed2", Mathf.Abs(verticalMove));
 
         transform.position += new Vector3(horizontalMove, verticalMove, 0f);
+        
+
+        if (horizontalMove != 0 || verticalMove != 0)
+        {
+            isMoving = true;
+        }
+        else
+        {
+            isMoving = false;
+        }
+
+        Debug.Log(isMoving);
+
+        if (isMoving)
+        {
+            if(!GetComponent<AudioSource>().isPlaying)
+            GetComponent<AudioSource>().Play();
+        }
+        else
+        {
+            GetComponent<AudioSource>().Stop();
+        }
+
     }
 }

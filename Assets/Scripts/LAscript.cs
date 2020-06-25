@@ -20,12 +20,16 @@ public class LAscript : MonoBehaviour
     public GameObject a;
     int la = 0;
 
+    bool vir = true;
+    public AudioSource crack;
+
 
 
 
     // Start is called before the first frame update
     void Start()
     {
+        Invoke("Help", 50f);
         
     }
 
@@ -40,6 +44,7 @@ public class LAscript : MonoBehaviour
         if (other.gameObject == a)
         {
             la = la + 1;
+            GetComponent<AudioSource>().Play();
 
             if(la == 2)
             {
@@ -73,10 +78,15 @@ public class LAscript : MonoBehaviour
         
     }
 
+    void Help()
+    {
+        vir = false;
+    }
+
     void WinOrLose()
     {
 
-        if (bS.Spreading)
+        if (vir == false)
         {
             win.GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, 1f);
             win2.GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, 1f);
@@ -87,6 +97,7 @@ public class LAscript : MonoBehaviour
             lose.GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, 1f);
             lose2.GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, 1f);
 
+            a.GetComponent<SpriteRenderer>().color = new Color(217f, 0f, 0f, 255f);
         }
     }
     
