@@ -9,6 +9,14 @@ public class LAscript : MonoBehaviour
     public Sprite la4;
     public Sprite la5;
 
+    public Virus bS;
+    public GameObject win;
+    public GameObject win2;
+    public GameObject lose;
+    public GameObject lose2;
+
+
+
     public GameObject a;
     int la = 0;
 
@@ -55,6 +63,7 @@ public class LAscript : MonoBehaviour
                         {
                             GetComponent<SpriteRenderer>().sprite = la5;
                             Destroy(GetComponent<BoxCollider2D>());
+                            WinOrLose();
                         }
                       
                     }
@@ -62,6 +71,23 @@ public class LAscript : MonoBehaviour
             }
         }
         
+    }
+
+    void WinOrLose()
+    {
+
+        if (bS.Spreading)
+        {
+            win.GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, 1f);
+            win2.GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, 1f);
+        }
+
+        else
+        {
+            lose.GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, 1f);
+            lose2.GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, 1f);
+
+        }
     }
     
 

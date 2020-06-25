@@ -9,7 +9,8 @@ public class NotificationCounter : MonoBehaviour
 
     GameObject[] enemies;
     public TextMeshProUGUI scoreText;
-    
+
+    public GameObject lose;
     
     void Update()
     {
@@ -18,6 +19,7 @@ public class NotificationCounter : MonoBehaviour
 
         StartCoroutine(Test());
 
+       
     }
 
     IEnumerator Test()
@@ -25,6 +27,16 @@ public class NotificationCounter : MonoBehaviour
         yield return new WaitForSeconds(1);
 
         scoreText.text = enemies.Length.ToString();
+
+        StartCoroutine(Lose());
     }
+
+    IEnumerator Lose()
+    {
+        yield return new WaitForSeconds(150f);
+
+        lose.GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, 1f);
+    }
+   
 
 }
