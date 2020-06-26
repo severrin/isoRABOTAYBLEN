@@ -3076,6 +3076,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pause Menu 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3373760238793244157, guid: d0b3e2fcb6c154c428550ecf67353185,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3373760238793244145, guid: d0b3e2fcb6c154c428550ecf67353185,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3180,6 +3185,36 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3373760237999396726, guid: d0b3e2fcb6c154c428550ecf67353185,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1633939072}
+    - target: {fileID: 3373760237999396726, guid: d0b3e2fcb6c154c428550ecf67353185,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Resume
+      objectReference: {fileID: 0}
+    - target: {fileID: 3373760236983507099, guid: d0b3e2fcb6c154c428550ecf67353185,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1633939072}
+    - target: {fileID: 3373760236983507099, guid: d0b3e2fcb6c154c428550ecf67353185,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Reload
+      objectReference: {fileID: 0}
+    - target: {fileID: 3373760237908430188, guid: d0b3e2fcb6c154c428550ecf67353185,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1633939072}
+    - target: {fileID: 3373760237908430188, guid: d0b3e2fcb6c154c428550ecf67353185,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: LoadMenu
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d0b3e2fcb6c154c428550ecf67353185, type: 3}
