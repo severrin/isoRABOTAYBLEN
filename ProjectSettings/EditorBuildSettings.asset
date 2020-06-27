@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/GAMEla.unity
     guid: 17fe3a19382338540a4c7017e6bd4d9e
+  - enabled: 1
+    path: Assets/Scenes/GAMEt.unity
+    guid: afb20932bbbfe3c439bbfd9625f5e546
   m_configObjects: {}
